@@ -17,16 +17,53 @@ import {
   Doottedvector,
   Footerarrow,
 } from "./Svg";
+import { SearchIcon,NotificationIcon,CheckboxIcon,OfficeIcon ,ActivityIcon} from "./Navsvg";
 import Navbar from "./Navbar";
 import { useState } from "react";
 const Sidebar = () => {
   return (
     <>
       <div className="side__main">
-        <div className="top__menu d-flex">
-          <h2>weframetech</h2>
-          <div className="humIcon">
-            <HumburgerIcon />
+        <div className="posfixed">
+          <div className="top__menu d-flex">
+            <h2>weframetech</h2>
+            {/* <div className="humIcon" >
+              <HumburgerIcon />
+            </div> */}
+          </div>
+        </div>
+        <div className="sidemenu__small">
+          <div className="nav__cont1 searchbar">
+            <div>
+              <SearchIcon />
+            </div>
+            <input type="text" placeholder="Search here" />
+          </div>
+          <div className="nav__cont2 othermenu">
+            <div className="navmenu__firt Notification">
+              <div className="number">7</div>
+              <div className="navIcon">
+                <NotificationIcon />
+              </div>
+            </div>
+            <div className="navmenu__firt">
+              <div className="number">12</div>
+              <div className="navIcon">
+                <ActivityIcon />
+              </div>
+            </div>
+            <div className="navmenu__firt">
+              <div className="number">1</div>
+              <div className="navIcon">
+                <CheckboxIcon />
+              </div>
+            </div>
+            <div className="navmenu__firt office">
+              <div className="number">!</div>
+              <div className="navIcon">
+                <OfficeIcon />
+              </div>
+            </div>
           </div>
         </div>
         <div className="side__mainmenu">

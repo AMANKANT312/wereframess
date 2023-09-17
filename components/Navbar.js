@@ -26,13 +26,16 @@ const Navbar = () => {
         <Sidebar />
       </div>
       <div className="nav__main" >
-        <div className="cross" style={{position:'fixed',left:"355px",fontSize:'2rem',top:"10px",fontWeight:"700",display:data}} onClick={dchanged}> 
+        <div className="cross" style={{position:'fixed',left:"298px",fontSize:'2rem',top:"15px",fontWeight:"700",display:data,zIndex:"10"}} onClick={dchanged}> 
          X
         </div>
         <div className="humbergermenu" onClick={changed}>
           <HumburgerIcon />
         </div>
-        <div className="nav__cont1 searchbar">
+        <div className="wereframe">
+          wereframe
+        </div>
+        <div className="nav__cont1 searchbar searchsnone">
           <div >
             <SearchIcon />
           </div>

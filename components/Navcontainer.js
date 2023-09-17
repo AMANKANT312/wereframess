@@ -19,7 +19,7 @@ const Navcontainer = () => {
             </div>
           </div>
           <div className="right">
-            <div className="company">
+            <div className="company comapanydn">
               <div className="company__content">
                 <h2>Centered Martial Arts</h2>
                 <h3>Sunnyvale, CA</h3>
