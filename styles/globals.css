@@ -29,12 +29,28 @@ h2 {
 /* ===============sidebar styling===================== */
 .side__main {
   width: 345px;
-  height: 1241px;
-  /* max-height: 100vh; */
-  /* overflow: scroll; */
+  /* height: 1241px; */
+  max-height: 100vh;
+  /* overflow-Y: scroll; */
+  /* overflow-X: hidden; */
   position: absolute;
   top: 0;
   background-color: var(--bgdark2);
+}
+.side__main::-webkit-scrollbar {
+  background-color: transparent;
+  height:0.8rem;
+  width:0.4rem;
+}
+
+.side__main::-webkit-scrollbar-track {
+  border-radius: 10px;
+ 
+}
+
+.side__main::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--pinkcol);
 }
 .sidemenu__small {
   display: none;
@@ -231,8 +247,8 @@ h2 {
 .navcont__main {
   /* width: 1476px;
   height: 206px; */
-  width: 100%;
-  margin: 2rem;
+  width: 98vw;
+  margin:1rem auto;
   background-color: var(--bgdark2);
   border-radius: 2rem;
 }
@@ -476,29 +492,19 @@ h2 {
   overflow-x: scroll;
   margin:0 auto;
 }
-.cardcontainer__main::-webkit-scrollbar-thumb {
- 
-}
-.cardcontainer__main::-webkit-scrollbar {
-  /* width: 20px;
-    height:1rem; */
-  /* width:2px; */
 
+.cardcontainer__main::-webkit-scrollbar {
   background-color: transparent;
   height:0.5rem;
 }
 
 .cardcontainer__main::-webkit-scrollbar-track {
-  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0);  */
   border-radius: 10px;
-  /* width:100px; */
   height: 10px;
 }
 
 .cardcontainer__main::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  height: 5px;
-  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0); */
   background-color: var(--pinkcol);
 }
 
@@ -603,7 +609,7 @@ h2 {
     font-size: 15px;
   }
   .nav__main {
-    width: 100vw;
+    width: 95vw;
   }
   .wereframe {
     display: block;
@@ -616,7 +622,7 @@ h2 {
   }
   .navcont__main {
     font-size: 0.8rem;
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
     padding: 0.3rem;
     max-width: 100vw;
   }
@@ -648,7 +654,8 @@ h2 {
   }
   .side__main {
     max-height: 100vh;
-    overflow: scroll;
+    overflow-y:scroll;
+    overflow-x: hidden;
   }
   .sidemenu__small .nav__cont2{
     display: flex;
