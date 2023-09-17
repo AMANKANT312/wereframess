@@ -31,7 +31,7 @@ h2 {
   width: 345px;
   /* height: 1241px; */
   max-height: 100vh;
-  /* overflow-Y: scroll; */
+  overflow-y: scroll;
   /* overflow-X: hidden; */
   position: absolute;
   top: 0;
@@ -39,13 +39,12 @@ h2 {
 }
 .side__main::-webkit-scrollbar {
   background-color: transparent;
-  height:0.8rem;
-  width:0.4rem;
+  height: 0.8rem;
+  width: 0.4rem;
 }
 
 .side__main::-webkit-scrollbar-track {
   border-radius: 10px;
- 
 }
 
 .side__main::-webkit-scrollbar-thumb {
@@ -248,7 +247,7 @@ h2 {
   /* width: 1476px;
   height: 206px; */
   width: 98vw;
-  margin:1rem auto;
+  margin: 1rem auto;
   background-color: var(--bgdark2);
   border-radius: 2rem;
 }
@@ -490,12 +489,12 @@ h2 {
   gap: 2rem;
   padding: 0 10px;
   overflow-x: scroll;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .cardcontainer__main::-webkit-scrollbar {
   background-color: transparent;
-  height:0.5rem;
+  height: 0.5rem;
 }
 
 .cardcontainer__main::-webkit-scrollbar-track {
@@ -581,7 +580,7 @@ h2 {
     margin: 0 auto;
     padding: 1rem;
     max-height: 500px;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
   .searchbar {
     padding: 0.7rem;
@@ -654,19 +653,19 @@ h2 {
   }
   .side__main {
     max-height: 100vh;
-    overflow-y:scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
   }
-  .sidemenu__small .nav__cont2{
+  .sidemenu__small .nav__cont2 {
     display: flex;
-    margin:2rem 0 1rem 0.1rem;
+    margin: 2rem 0 1rem 0.1rem;
   }
-} 
+}
 
 /* ===============navbar for mobile ============== */
 .sidemenu__small .searchbar {
   width: 90%;
   margin-top: 85px;
-  margin-left:1rem;
-  margin-bottom:0.8rem;
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
 }
