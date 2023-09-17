@@ -575,12 +575,27 @@ h2 {
 }
 @media only screen and (max-width: 600px) {
   .nav__main {
-    width: 90%;
+    width: 98vw;
     min-width: 300px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.6rem;
     max-height: 500px;
+    justify-content: center;
+    gap:0.5rem;
     /* overflow: scroll; */
+  }
+  .userInfo h2{
+    font-size: 0.9rem;
+  }
+  .userInfo h3{
+    font-size: 0.8rem;
+  }
+  .user__profpic{
+    width:30px;
+    height:30px;
+  }
+  .user{
+    padding:0.2rem;
   }
   .searchbar {
     padding: 0.7rem;
@@ -634,7 +649,7 @@ h2 {
   .navcont__lower .left {
     padding: 0.8rem;
     margin-inline: 1.5rem;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .navprogress {
     flex-wrap: wrap;
